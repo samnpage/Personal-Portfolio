@@ -1,6 +1,7 @@
 :root {
     --main-red: rgb(251, 72, 72);
     --main-black: black;
+    --main-white: white;
 }
 
 * {
@@ -43,10 +44,6 @@ body {
     align-items: center;
 }
 
-.nav-item {
-    /* padding-right: 2rem; */
-}
-
 .nav-link {
     text-decoration: none;
     color: white;
@@ -56,6 +53,11 @@ body {
 
 .nav-link:hover {
     background-color: rgb(179, 94, 94);
+}
+
+/* ***** HEADER ***** */
+header {
+    margin-top: 75px;
 }
 
 
@@ -71,14 +73,53 @@ body {
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
+.about-container div {
+    margin: 20px 0;
+}
+
+/* header {
+    color: var(--main-white);
+} */
+.about-container {
+    margin: 0 150px;
+    align-items: center;
+    justify-content: center;
+}
+.about-header {
+    text-align: center;
+}
+
 #welcome-section h1 {
-    color: white;
-    font-size: 5rem;
+    color: var(--main-white);
+    font-size: 4rem;
 }
 
 #welcome-section h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     font-style: italic;
     color: var(--main-red);
+}
+
+.about-photo {
+    text-align: center;
+}
+
+.about-header h3 {
+    color: var(--main-red)
+}
+
+.about-text {
+    color: var(--main-white);
+    font-size: 1.25rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.resume-button {
+    border: none;
+    border-radius: 3px;
+    height: 2rem;
+    padding: 0 5px;
+    margin-top: 20px;
 }

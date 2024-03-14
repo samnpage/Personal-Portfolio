@@ -26,6 +26,12 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Page</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -45,13 +51,39 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
         </ul>
     </nav>
 
-    <!-- ***** HEADER ***** -->
-    <header id=""></header>
-
     <!-- ***** ABOUT ***** -->
-    <section id="welcome-section">
-        <h1>Sam Page</h1>
-        <h3>Full-Stack Developer</h3>
+    <section id="welcome-section" class="">
+        <div class="about-container">
+            <div class="about-header">
+                <h1>Sam Page</h1>
+                <h3>Full-Stack Developer</h3>
+            </div>
+            <div class="about-photo">
+                <img class="headshot" src="assets/headshot.jpg" alt="Headshot" width="250px">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hello I'm Sam, a passionate Full-Stack Developer.
+                </p>
+                <p>
+                    I am a recent graduate from Eleven Fifty Academy, where I cultivated my skills in software development and web technologies.
+                </p>
+                <p>
+                    During my time at Eleven Fifty Academy, I delved into coding, gaining proficiency in C#, HTML, CSS, JavaScript, .NET Framework, SQL, and hands-on experience in Agile and Scrum methodologies. I honed version control using Git, explored APIs, refined skills in MVC architecture, and managed code repositories on GitHub. This experience has equipped me with a strong foundation in problem-solving and critical thinking for software development.
+                </p>
+                <p>
+                    Beyond coding, I enjoy working out, golfing, and playing video games. With a
+                    diverse skill set and a love for learning, I'm committed to making a
+                    positive impact wherever I go.
+                </p>
+                <a
+                    target="_blank"
+                    href="#"
+                >
+                    <button class="resume-button">Download Resume</button>
+                </a>
+            </div> 
+        </div>        
     </section>
 
     <!-- ***** PROJECTS ***** -->
