@@ -32,6 +32,7 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -45,9 +46,9 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
 
@@ -78,7 +79,7 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
                 </p>
                 <a
                     target="_blank"
-                    href="#"
+                    href="https://docs.google.com/document/d/1XlHLZLiI6HkmUmEEpJ9ljHybJECHLixdyCZNgO1S7Qw/edit?usp=sharing"
                 >
                     <button class="resume-button">Download Resume</button>
                 </a>
@@ -88,25 +89,63 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
 
     <!-- ***** PROJECTS ***** -->
     <section id="projects">
-        <h2 class="projects-section-header">Here are some of my projects</h2>
-        <div class="projects-grid">
-            <a href="https://samnpage.github.io/weather-app/" target="_blank" class="project-tile">
-                <img src="./assets/weather-app.png" alt="Weather App" width="500px">
-                <p class="project-title">
-                Weather App
-                </p>
-            </a> 
-            
-        </div>
+        <div class="projects-container">
+            <h2 class="projects-section-header">Here are some of my projects...</h2>
+            <div class="projects-grid">
+                <a href="https://samnpage.github.io/weather-app/" target="_blank" class="project-tile">
+                    <img src="./assets/weather-app.png" alt="Weather App" width="500px" class="project-img">
+                    <p class="project-title">
+                    Weather App
+                    </p>
+                    <p class="project-description">Uses a 3rd party API to display current weather conditions.</p>
+                </a>
+
+                <a href="https://samnpage.github.io/static-storefront/" target="_blank" class="project-tile">
+                    <img src="./assets/custom-keyboardz.png" alt="Weather App" width="500px" class="project-img">
+                    <p class="project-title">
+                    Custom Keyboardz
+                    </p>
+                    <p class="project-description">
+                        Static webpage for a retail store that sells custom PC accessories.
+                    </p>
+                </a>
+
+                <a href="https://samnpage.github.io/Product_Landing_Page/" target="_blank" class="project-tile">
+                    <img src="./assets/product-landing-page.png" alt="Weather App" width="500px" class="project-img">
+                    <p class="project-title">
+                    Product Landing Page
+                    </p>
+                    <p class="project-description">
+                        Basic landing page developed for freeCodeCamp certification project.
+                    </p>
+                </a>
+            </div>
+        </div>    
     </section>
 
     <!-- ***** CONTACT ***** -->
-    <section id="contact">
+    <!-- <section id="contact">
+        <h2 id="contact-title">Let's work together...</h2>
         <div class="contact-links">
-            <a href="https://github.com/samnpage" target="_blank" id="profile-link">Github</a>
+            <a href="https://github.com/samnpage" target="_blank" id="profile-link" class="btn contact-details">
+                Github
+            </a>
         </div>
-    </section>
+    </section> -->
 
     <!-- ***** FOOTER ***** -->
+    <footer>
+        <div class="profile-links">
+            <a href="https://github.com/samnpage" target="_blank" class="btn contact-details">
+                <i class="fa fa-github" style="color: white"></i>
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/sam-page-012688243/" target="_blank" class="btn contact-details">
+                <i class="fa fa-linkedin-square" style="color: white;"></i>
+                Linked-In
+            </a>
+        </div>
+        <!-- <p id="copy-right">&copy Sam Page</p> -->
+    </footer>
 </body>
 </html>
