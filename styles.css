@@ -216,7 +216,7 @@ footer {
     background: var(--main-black);
 }
 
-.contact-details {
+#profile-link {
     font-size: 1.5rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
@@ -289,7 +289,7 @@ footer {
         flex-direction: column;
     } */
 
-    .contact-details {
+    #profile-link {
         font-size: 1.25rem;
         padding: .5rem .5rem;
     }
