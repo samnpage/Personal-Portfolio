@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ol {
@@ -146,7 +147,7 @@ a {
     margin-bottom: 3rem;
 }
 
-#about-section h1, #projects h1 {
+#about-section h1, #projects h1, #tech-stack h1{
     color: var(--main-white);
     font-size: 3.5rem;
     font-weight: 700;
@@ -206,6 +207,23 @@ a {
 
 .term-button:hover {
     cursor: inherit;
+}
+
+/* ***** TECH STACK ***** */
+#tech-stack {
+    width: 100%;
+    min-height: 275px;
+    background-color: var(--main-black);
+}
+
+.tech-stack-container {
+    width: 100%;
+    height: 100%;
+    color: var(--main-white);
+}
+
+.tech-stack-container p {
+    color: var(--main-grey);
 }
 
 /* ***** PROJECTS ***** */
