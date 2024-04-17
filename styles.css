@@ -7,10 +7,33 @@
     --main-black: #191919;
 }
 
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
+
+}
+
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+.nav-fixed {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background-color: var(--main-black) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    z-index: 1000 !important;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: var(--main-black);
+    position: relative;
 }
 
 ol {
@@ -22,14 +45,6 @@ li {
     list-style-type: none;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.4;
-    background-color: var(--main-black);
-    position: relative;
-}
 
 a {
     color: var(--main-white);
@@ -93,6 +108,39 @@ a {
     color: var(--main-black);
 }
 
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list li:last-child {
+    margin-right: 0;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #fff;
+}
 /* ***** HOME ***** */
 .home {
     height: 100vh;
@@ -188,7 +236,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:end;
+    align-items: end;
 }
 
 .term-button {
@@ -326,4 +374,154 @@ footer {
     margin: 0;
     font-size: 1rem;
     color: var(--main-grey);
+}
+
+/* **** MEDIA QUIERIES ***** */
+@media only screen and (max-width: 576px) {
+
+    body {
+        margin: 0 20px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 25%;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: auto;
+        background-color: var(--main-black);
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 7px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .headshot {
+        width: 250px;
+    }
+
+    #home-section, #about-section, #projects, #contact, footer, #tech-stack, #navbar {
+        transform: scale(0.9);
+    }
+
+    #home-section h1, #about-section h1, #projects h1, #contact h1, footer h1, #tech-stack h1 {
+        font-size: 2rem;
+    }
+
+    .info-title p, .info-term p {
+        font-size: .8rem;
+    }
+
+    #job-title {
+        font-size: .1rem;
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home-header {
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .home-content * {
+        padding: 0 8px;
+    }
+
+    .home-content h2, .home-content p {
+        font-size: 1.5rem;
+    }
+
+    .home-content h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-content span {
+        display: hidden;
+    }
+
+    #about-section {
+        width: 100%;
+        display: block;
+    }
+
+    .about-container, .about-container *{
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .code-lang {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    #lang-photo {
+        width: 175px;
+    }
+
+    .contact-container {
+        justify-content: center;
+    }
+
+    .contact-container h1 {
+        display: none;
+    }
+
+    .contact-items *{
+        padding: 0;
+    }
+
+    footer p {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    #about-section {
+        width: 100%;
+        display: block;
+    }
+
+    .about-container, .about-container *{
+        max-width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .headshot {
+        width: 300px;
+    }
+
+    /* .home-content * {
+        padding: 0 8px;
+    } */
+
+    .home-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
 }

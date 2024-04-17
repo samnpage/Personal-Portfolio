@@ -17,12 +17,17 @@
 </head>
 <body>
 </head>
-<body class="container p-0">
+<body class="container-sm p-0">
 
     <!-- ***** NAVBAR ***** -->
     <nav id="navbar" class="nav">
         <h1>samnpage</h1>
-        <ul class="nav-list">
+        <span class="nav-toggle" onclick="toggleNavbar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </span>
+        <ul class="nav-list" id="navList">
             <li class="nav-item">
                 <a class="nav-link" href="#home-section">Home</a>
             </li>
@@ -57,15 +62,15 @@
 
     <!-- ***** HOME ***** -->
     <section id="home-section" class="home d-block position-relative">
-        <div class="d-flex justify-content-between align-items-center position-absolute top-50 start-50 translate-middle h-50 w-100">
-            <div class="container d-flex flex-column p-0" id="home-header">
+        <div class="d-flex justify-content-sm-between align-items-sm-center position-relative top-50 start-50 translate-middle h-50 w-100 home-container flex-sm-row flex-column-reverse">
+            <div class="home-content container d-flex flex-column p-0" id="home-header">
                 <h2>
                     Hi,<span> 👋 </span>
-                    <br>
-                    My name is
-                    <br>
+                    
+                    My name is 
+                    
                     <span id="home-name">Sam Page</span>
-                    <br>
+                    
                 </h2>
                 <p>
                     I'm a Full-Stack Developer
@@ -74,7 +79,7 @@
                     <button class="btn btn-primary">Download Resume</button>
                 </a>
             </div> 
-            <div class="container d-flex justify-content-end p-0" id="home-photo">
+            <div class="home-content container d-flex justify-content-center align-items-center justify-content-sm-end p-0" id="home-photo">
                 <img class="headshot" src="assets/light_grey_smile_no_reflect.png" alt="Headshot" width="400px">
             </div>       
         </div>
@@ -99,7 +104,7 @@
                 </div>
                 <div class="info-card d-flex justify-content-between">
                     <div class="info-title ">
-                        <h3>Software Development</h3>
+                        <h3 id="job-title">Software Development</h3>
                         <div>
                             <ol class="d-flex">
                                 <li class="pr-3">      
@@ -130,9 +135,9 @@
                 <div>
                     <h1>Work Experience</h1>
                 </div>
-                <div class="info-card d-flex justify-content-between">
+                <div class="info-card d-flex justify-content-sm-between">
                     <div class="info-title ">
-                        <h3>Assistant Restaurant Manager</h3>
+                        <h3 id="job-title">Assistant Restaurant Manager</h3>
                         <div>
                             <ol class="d-flex">
                                 <li class="pr-3">      
@@ -168,7 +173,7 @@
                 </div>
                 <div class="info-card d-flex justify-content-between">
                     <div class="info-title ">
-                        <h3>Landscape Operations Supervisor</h3>
+                        <h3 id="job-title">Landscape Operations Supervisor</h3>
                         <div>
                             <ol class="d-flex">
                                 <li class="pr-3">      
@@ -208,33 +213,39 @@
 
     <!-- ***** TECH STACK ***** -->
     <section id="tech-stack" class="position-relative">
-        <div class="tech-stack-container position-absolute d-flex flex-column justify content-center pb-5">
+        <div class="tech-stack-container position-relative d-flex flex-column justify content-center pb-5">
             <div>
                 <h1>My Tech Stack</h1>
                 <p>Technologies I've been working with recently</p>
             </div>
-            <div class="d-flex justify-content-between">
-                
+            <div class="d-flex justify-content-start code-lang">
+                <div class="d-flex flex-row justify-content-center">
                     <div class="row">
-                        <img class="" width="128px" src="./assets/html.png" alt="HTML Icon">
+                        <img id="lang-photo" class="p-5" width="128px" src="./assets/html.png" alt="HTML Icon">
                     </div>
                     <div class="row">
-                        <img class="" width="128px" src="./assets/social.png" alt="CSS Icon">
+                        <img id="lang-photo" class="p-5" width="128px" src="./assets/social.png" alt="CSS Icon">
+                    </div>
+                </div>
+                    
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="row">
+                        <img id="lang-photo" class="p-5" width="128px" src="./assets/js.png" alt="Javascript Icon">
                     </div>
                     <div class="row">
-                        <img class="" width="128px" src="./assets/js.png" alt="Javascript Icon">
+                        <img id="lang-photo" class="p-5" width="128px" src="./assets/c-sharp.png" alt="C# Icon">
                     </div>
-                
-                
+                </div>
+                <div class="d-flex flex-row justify-content-center">
                     <div class="row">
-                        <img class="" width="128px" src="./assets/c-sharp.png" alt="C# Icon">
-                    </div>
-                    <div class="row">
-                        <img class="" width="128px" src="./assets/bootstrap.png" alt="Bootstrap Icon">
+                        <img id="lang-photo" class="p-5" width="128px" src="./assets/bootstrap.png" alt="Bootstrap Icon">
                     </div>
                     <div class="row">
-                        <img class="" width="128px" src="./assets/github.png" alt="Github Icon">
+                        <img id="lang-photo" class="p-5" width="128px" src="./assets/github.png" alt="Github Icon">
                     </div>
+                </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -347,13 +358,13 @@
 
     <!-- ***** CONTACT ***** -->
     <section id="contact" class="position-relative">
-        <div class="contact-container d-flex justify-content-between align-items-center">
+        <div class="contact-container d-flex justify-content-sm-between align-items-center position-absolute w-100">
             <h1>samnpage</h1>
-            <div class="d-flex justify-content-end">
-                <div id="email" class="pl-5">
+            <div class="contact-items d-flex justify-content-sm-end">
+                <div id="email" class="pl-sm-5">
                     <a href="mailto:samnpage96@gmail.com">samnpage96@gmail.com</a>
                 </div>
-                <div class="d-flex flex-row pl-5">
+                <div class="d-flex flex-row pl-sm-5">
                     <div id="" class="pl-4">
                         <a class="" href="https://github.com/samnpage" target="_blank" alt="Github Link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -378,7 +389,7 @@
 
     <!-- ***** FOOTER ***** -->
     <footer class="position-relative">
-        <div class="d-flex justify-content-between align-items-center h-100 position-relative">
+        <div class="d-flex justify-content-center justify-content-sm-between align-items-center h-100 position-relative">
             <div class="d-flex flex-row h-100">
                 <ul class="d-flex flex-row m-0 p-0 align-items-center ">
                     <li class="pr-4">
@@ -395,12 +406,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="h-100 d-flex align-items-center">
+            <div class="h-100 d-flex align-items-center design-container">
                 <p>Designed by 
                     <bold><a href="https://www.figma.com/proto/9WkUfg81SfLzRtdb2DtnU8/Developer-Portfolio-Design-(Community)?node-id=1-4" target="_blank">Pavan MG</a></bold>              
                 </p>
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
