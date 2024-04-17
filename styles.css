@@ -166,7 +166,7 @@ a {
     height: 40px;
     color: var(--main-white);
     text-decoration: none;
-    width: 160px;
+    min-width: 200px;
     padding: 5px 0;
 }
 
@@ -197,7 +197,7 @@ a {
     font-size: 3.5rem;
     font-weight: 700;
     text-shadow: 2.5px 2.5px 2.5px #1f1f1f;
-    margin: 25px 0;
+    margin: 35px 0;
 }
 
 #about-section h3 {
@@ -413,11 +413,17 @@ footer {
         width: 250px;
     }
 
+    .resume-btn {
+        min-width: 200px;
+        font-weight: 600;
+        min-height: 50px;
+    }
+
     #home-section, #about-section, #projects, #contact, footer, #tech-stack{
         transform: scale(0.9);
     }
 
-    #home-section h1, #about-section h1, #projects h1, #contact h1, footer h1, #tech-stack h1 {
+    #home-section h1, #about-section h1, #projects h1, footer h1, #tech-stack h1 {
         font-size: 2rem;
     }
 
@@ -460,7 +466,7 @@ footer {
 
     #about-section {
         width: 100%;
-        display: block;
+        display: flex;
     }
 
     .about-container, .about-container *{
@@ -490,26 +496,26 @@ footer {
     }
 
     .contact-container {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .contact-container h1 {
-        display: none;
+        font-size: 1rem;
     }
 
     .contact-items *{
         padding: 0;
     }
 
-    .design-container {
+    /* .design-container {
         display: none;
-    }
+    } */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     #about-section {
         width: 100%;
-        display: block;
+        display: flex;
     }
 
     .about-container, .about-container *{
@@ -521,9 +527,10 @@ footer {
         width: 300px;
     }
 
-    /* .home-content * {
-        padding: 0 8px;
-    } */
+    .home-content {
+
+        justify-content: center;
+    }
 
     .home-content h2 {
         font-size: 2.5rem;
