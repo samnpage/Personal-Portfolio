@@ -52,9 +52,8 @@ a {
 }
 
 /* ***** NAVBAR ***** */
+
 .nav {
-    display: flex;
-    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
@@ -64,7 +63,20 @@ a {
     align-items: center;
     font-size: 1rem;
     position: absolute;
-    padding: 0 30px;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
 }
 
 .nav h1 , .contact-container h1{
@@ -378,6 +390,10 @@ footer {
 
     body {
         margin: 0 20px;
+    }
+
+    .nav-container {
+        padding: 0 20px;
     }
 
     .nav-list {
