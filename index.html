@@ -21,7 +21,7 @@
     <!-- ***** NAVBAR ***** -->
     <nav id="navbar" class="nav">
         <div class="container-md nav-container">
-            <h1>@samnpage</h1>
+            <h1><a href="#home-section">@samnpage</a></h1>
             <span class="nav-toggle" onclick="toggleNavbar()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -359,11 +359,13 @@
 
         <!-- ***** CONTACT ***** -->
         <section id="contact" class="position-relative">
-            <div class="contact-container d-flex justify-content-md-between align-items-center position-absolute w-100">
-                <h1>@samnpage</h1>
+            <div class="contact-container d-flex justify-content-center justify-content-md-between align-items-center position-absolute w-100">
+                <div id="contact-handle">   
+                    <h1><a href="#home-section">@samnpage</a>
+                </div>
                 <div class="contact-items d-flex justify-content-md-end align-items-center">
                     <div id="email" class="pl-md-5">
-                        <a href="mailto:samnpage96@gmail.com">samnpage96@gmail.com</a>
+                        <a class="nav-link" href="mailto:samnpage96@gmail.com">samnpage96@gmail.com</a>
                     </div>
                     <div class="d-flex flex-row pl-md-5">
                         <div id="" class="pl-4">
@@ -390,26 +392,28 @@
 
         <!-- ***** FOOTER ***** -->
         <footer class="position-relative">
-            <div class="d-flex justify-content-around justify-content-md-between align-items-center h-100 position-relative">
+            <div class="d-flex justify-content-between align-items-center h-100 position-relative">
                 <div class="d-flex flex-row h-100">
-                    <ul class="d-flex flex-row m-0 p-0 align-items-center ">
+                    <ul class="d-flex flex-row m-0 p-0 align-items-center">
                         <li class="pr-4">
-                            <a class="footer-link" href="#home-section">Home</a>
+                            <a class="footer-link nav-link" href="#home-section">Home</a>
                         </li>
                         <li class="pr-4">
-                            <a class="footer-link" href="#about-section">About</a>
+                            <a class="footer-link nav-link" href="#about-section">About</a>
                         </li>
                         <li class="pr-4">
-                            <a class="footer-link text-nowrap" href="#tech-stack-section">Tech Stack</a>
+                            <a class="footer-link nav-link text-nowrap" href="#tech-stack-section">Tech Stack</a>
                         </li>
                         <li class="pr-4">
-                            <a class="footer-link" href="#projects">Projects</a>
+                            <a class="footer-link nav-link" href="#projects">Projects</a>
                         </li>
                     </ul>
                 </div>
                 <div class="h-100 d-flex align-items-center design-container">
-                    <p>Designed by 
-                        <bold><a href="https://www.figma.com/proto/9WkUfg81SfLzRtdb2DtnU8/Developer-Portfolio-Design-(Community)?node-id=1-4" target="_blank">Pavan MG</a></bold>              
+                    <p style="text-align: right;">
+                        <i>Designed by 
+                            <bold><a href="https://www.figma.com/proto/9WkUfg81SfLzRtdb2DtnU8/Developer-Portfolio-Design-(Community)?node-id=1-4" target="_blank">Pavan MG</a></bold>
+                        </i>              
                     </p>
                 </div>
             </div>

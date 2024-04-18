@@ -74,11 +74,6 @@ a {
     padding: 0;
 }
 
-h1 {
-    display: flex;
-    align-items: center;
-}
-
 .nav h1 , .contact-container h1{
     color: var(--main-white);
     font-size: 1rem;
@@ -89,6 +84,8 @@ h1 {
 
 .nav h1 {
     padding-left: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -120,9 +117,10 @@ h1 {
     align-items: center;
 }
 
-.nav-link:hover {
-    background-color: var(--main-white);
-    color: var(--main-black);
+.nav-link:hover  {
+    /* background-color: var(--main-white); */
+    color: var(--main-grey);
+    text-decoration: underline;
 }
 
 .navbar {
@@ -175,11 +173,12 @@ h1 {
 
 .resume-btn {
     border-radius: 3px;
-    height: 40px;
+    min-height: 50px;
     color: var(--main-white);
     text-decoration: none;
     min-width: 200px;
     padding: 5px 0;
+    font-weight: 600;
 }
 
 .home h2 span {
@@ -494,6 +493,10 @@ footer {
         text-align: center;
     }
 
+    .tech-header h1 {
+        text-align: center;
+    }
+
     .tech-header p {
         font-size: 1.5rem;
     }
@@ -511,10 +514,6 @@ footer {
         width: 175px;
     }
 
-    .contact-container {
-        justify-content: space-between;
-    }
-
     .contact-container h1 {
         font-size: 1rem;
     }
@@ -523,9 +522,9 @@ footer {
         padding: 0;
     }
 
-    /* .design-container {
+    #contact-handle {
         display: none;
-    } */
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
