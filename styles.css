@@ -118,7 +118,6 @@ a {
 }
 
 .nav-link:hover  {
-    /* background-color: var(--main-white); */
     color: var(--main-grey);
     text-decoration: underline;
 }
@@ -161,14 +160,22 @@ a {
     height: 100vh;
 }
 
-.home h2 {
+#home-name {
     color: var(--main-white);
-    font-size: 4.25rem;
+    font-weight: 600;
+}
+
+.intro {
+    color: var(--main-white);
 }
 
 .home p {
     color: var(--main-grey);
     font-size: 3rem;
+}
+
+#job-title {
+    font-size: 1.5rem;
 }
 
 .resume-btn {
@@ -386,7 +393,7 @@ footer {
 }
 
 /* **** MEDIA QUIERIES ***** */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     body {
         margin: 0 20px;
@@ -417,10 +424,6 @@ footer {
         padding: 10px 0;
     }
 
-    /* .nav-link {
-        padding: 7px;
-    } */
-
     .nav-toggle {
         display: block;
     }
@@ -448,7 +451,7 @@ footer {
     }
 
     #job-title {
-        font-size: .1rem;
+        font-size: 1.25rem;
     }
 
     .home-container {
@@ -538,20 +541,7 @@ footer {
         font-size: 1.25rem;
     }
 
-    .headshot {
-        width: 300px;
-    }
-
-    .home-content {
-
-        justify-content: center;
-    }
-
-    .home-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .home-content p {
-        font-size: 1rem;
+    #job-title {
+        font-size: 1.5rem;
     }
 }
