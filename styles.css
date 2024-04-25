@@ -5,6 +5,8 @@
     --main-grey-dark: #363636;
     --main-white: #D9D9D9;
     --main-black: #191919;
+    --main-turquois: #12E1C1;
+    --main-purple: #CA53C6;
 }
 
 *, *::before, *::after {
@@ -82,10 +84,18 @@ a {
 
 }
 
-.nav h1 {
+.nav h1 a{
     padding-left: 5px;
     display: flex;
     align-items: center;
+    /* Create a linear gradient background for the text */
+    background-image: linear-gradient(to right, #12E1C1, #CA53C6);
+    /* Set the background clip to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Set the text color to transparent */
+    color: transparent;
+    font-weight: 800;
 }
 
 .nav-list {
@@ -162,6 +172,17 @@ a {
 
 .home-text {
     color: var(--main-white);
+}
+
+#home-name {
+    /* Create a linear gradient background for the text */
+    background-image: linear-gradient(to right, #12E1C1, #CA53C6);
+    /* Set the background clip to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Set the text color to transparent */
+    color: transparent;
+    font-weight: 800;
 }
 
 .home p {
