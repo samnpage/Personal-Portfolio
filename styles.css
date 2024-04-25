@@ -409,6 +409,17 @@ footer {
     color: var(--main-grey);
 }
 
+#designer-name {
+    /* Create a linear gradient background for the text */
+    background-image: linear-gradient(to right, #12E1C1, #CA53C6);
+    /* Set the background clip to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Set the text color to transparent */
+    color: transparent;
+    font-weight: 800;
+}
+
 /* **** MEDIA QUIERIES ***** */
 @media only screen and (max-width: 767px) {
 
